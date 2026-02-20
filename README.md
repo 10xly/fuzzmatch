@@ -23,6 +23,10 @@ Again, if you want anymatch, just do this:
 ```js
 var anymatch = fuzzmatch('anymatch')
 ```
+It also provides is-match, but because that package is vulnerable, it actually provides a stub function that returns a function that returns true:
+```js
+console.log(fuzzmatch('is-match')()()) // true
+```
 Here is an example:
 ```js
 var assert = require('assert')

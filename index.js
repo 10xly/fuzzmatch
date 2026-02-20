@@ -33,6 +33,8 @@ function getMatcher(matcherName) {
       return nanomatch
     case "anymatch":
       return anymatch
+    case "is-match":
+      return require("@substack/is-match")
     default:
       return
   }
